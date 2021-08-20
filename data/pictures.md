@@ -15,7 +15,7 @@
 
 
 
-![](C:\Users\17206\Desktop\data\single.svg)
+![](./data/single.svg)
 
 
 
