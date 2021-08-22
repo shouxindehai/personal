@@ -1,10 +1,15 @@
 # RESULT
 
-Description: The following content shows the performance of Flappy Bird based on NEAT algorithm at different latitudes.
+Description: 
+
+The following content shows the performance of Flappy Bird based on NEAT algorithm at different latitudes and some comparation between ql and neat .
 
 Controllable parameters: speed, barrier clearance, refresh rate(FPS), number of birds per generation, number of generations
 
 
+
+With the help of my teammate Qin , we improved the difficulty of the game. For example, we increase the randomness of the gap position between the upper and lower pipes and appropriately reduce gap size.
+This is the process of training.
 
 
 
@@ -63,7 +68,7 @@ Indeed, as it turns out, the faster we found, the worse the performance of the b
 
 There is a second column in the table about the two groups shown earlier: Speciation
 
-The previous student Xie has talked about variation in the algorithm part of our project. We found that as the difficulty increased, more species appeared, and more patches of color appeared on the diagram. That is to say, the increase of difficulty promotes the occurrence of mutation, and the proportion of specie obtained by new mutation also increases.
+The previous student QIN has talked about variation in the algorithm part of our project. We found that as the difficulty increased, more species appeared, and more patches of color appeared on the diagram. That is to say, the increase of difficulty promotes the occurrence of mutation, and the proportion of specie obtained by new mutation also increases.
 
 
 
@@ -73,4 +78,22 @@ In addition to these dimensions, we also conducted experiments on the influence 
 
 
 
-Our team also tried to compare QL_bird with neAT_bird, but the ql_bird performed better and lasted longer in the same difficulty. We will do more research to find out why this is so.
+With the same limited training time, THE QL_bird can traverse all situations, It learns to stick to the lower edge of the obstacle, free from random obstacles, and eventually produce a very good model. With high efficiency, NEAT achieves far better results than Qlearning in the early stage. However, it is still affected by randomness. However, limited by time and parameters we set, maybe we did not achieve the best effect of NEAT project. BUT After parameter adjustment, our NEAT_bird can also quickly get a model and finally get a high score.
+
+In addition, The NEAT bird is more adaptable than the QL bird when the difficulty increases. The QL bird needs to update the Q table slowly, and Neat quickly adapts and performs well
+
+On the left is the post-neat training process. In the middle is a single test of a bird selected by NEAT. On the right is a single test of a bird selected by QL.
+
+Comparing the two flight attitudes, we found that the above conjecture is true.
+
+
+
+After all, We added SAVE and LOAD functions to SAVE the optimal model, which enabled our training to be carried out in stages and greatly improved the effect of our cooperative training. Finally, through continuous training and screening, our final model could get a high score and the high score of 1000 was achieved in the end. 
+
+
+
+In the future exploration, we will try to use more algorithms, such as PPO mentioned in the first group, to optimize, improve and compare our AI_flappy_bird.
+
+
+
+Through the experience of this project, we have mastered some knowledge of deep learning and improved the ability of the project. Thanks for the guidance of teachers and teaching assistants
